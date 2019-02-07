@@ -21,7 +21,7 @@ public class UserService {
 		return userDao.getUserById(id);
 	}
 	
-	@Transactional//此注释用来给该方法加上事务
+	@Transactional	//此注释用来给该方法加上事务
 	public boolean tx(){
 		User user1 = new User();
 		user1.setId(2);
