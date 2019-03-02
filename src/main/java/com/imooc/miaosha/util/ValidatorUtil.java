@@ -20,8 +20,8 @@ public class ValidatorUtil {
 		return m.matches();
 	}
 	
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		System.out.println(isMobile("15555555555"));
 		System.out.println(isMobile("1559988556"));
-	}
+	}*/
 }
