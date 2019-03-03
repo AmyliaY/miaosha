@@ -2,9 +2,6 @@ package com.imooc.miaosha.domain;
 
 import java.util.Date;
 
-/**
-* @author 全恒
-*/
 public class MiaoshaUser {
 	private Long id;
 	private String nickname;

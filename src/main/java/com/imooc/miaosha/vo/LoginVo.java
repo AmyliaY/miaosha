@@ -6,9 +6,6 @@ import org.hibernate.validator.constraints.Length;
 
 import com.imooc.miaosha.validator.IsMobile;
 
-/**
-* @author 全恒
-*/
 public class LoginVo {
 	
 	@NotNull
@@ -35,6 +32,4 @@ public class LoginVo {
 	public String toString() {
 		return "LoginVo [mobile=" + mobile + ", password=" + password + "]";
 	}
-	
-	
 }

@@ -3,10 +3,6 @@ package com.imooc.miaosha.redis;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
-* @author 全恒
-*/
-
 @Component
 @ConfigurationProperties(prefix="redis")
 public class RedisConfig {
@@ -16,8 +12,7 @@ public class RedisConfig {
 	private String password;
 	private int poolMaxTotal;
 	private int poolMaxIdle;
-	private int poolMaxWait;
-	
+	private int poolMaxWait;//秒
 	public String getHost() {
 		return host;
 	}
@@ -60,6 +55,4 @@ public class RedisConfig {
 	public void setPoolMaxWait(int poolMaxWait) {
 		this.poolMaxWait = poolMaxWait;
 	}
-	
-	
 }

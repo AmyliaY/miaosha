@@ -22,8 +22,8 @@ public class GlobalExceptionHandler {
 		if(e instanceof GlobalException) {
 			GlobalException ex = (GlobalException)e;
 			return Result.error(ex.getCm());
-		} else if (e instanceof BindException){
-			BindException ex = (BindException) e;
+		}else if(e instanceof BindException) {
+			BindException ex = (BindException)e;
 			List<ObjectError> errors = ex.getAllErrors();
 			ObjectError error = errors.get(0);
 			String msg = error.getDefaultMessage();

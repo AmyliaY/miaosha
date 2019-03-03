@@ -1,16 +1,12 @@
 package com.imooc.miaosha.validator;
-
-import javax.validation.ConstraintValidator;
+import  javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 import org.apache.commons.lang3.StringUtils;
 
 import com.imooc.miaosha.util.ValidatorUtil;
 
-/**
-* @author 全恒
-*/
-public class IsMobileValidator implements ConstraintValidator<IsMobile, String>{
+public class IsMobileValidator implements ConstraintValidator<IsMobile, String> {
 
 	private boolean required = false;
 	
@@ -19,12 +15,12 @@ public class IsMobileValidator implements ConstraintValidator<IsMobile, String>{
 	}
 
 	public boolean isValid(String value, ConstraintValidatorContext context) {
-		if(required){
+		if(required) {
 			return ValidatorUtil.isMobile(value);
-		} else {
-			if(StringUtils.isEmpty(value)){
+		}else {
+			if(StringUtils.isEmpty(value)) {
 				return true;
-			}else{
+			}else {
 				return ValidatorUtil.isMobile(value);
 			}
 		}

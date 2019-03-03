@@ -6,13 +6,9 @@ import org.apache.ibatis.annotations.Select;
 
 import com.imooc.miaosha.domain.MiaoshaUser;
 
-/**
-* @author 全恒
-*/
-
 @Mapper
 public interface MiaoshaUserDao {
-
+	
 	@Select("select * from miaosha_user where id = #{id}")
 	public MiaoshaUser getById(@Param("id")long id);
 }

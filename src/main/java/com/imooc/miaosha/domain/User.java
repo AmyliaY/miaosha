@@ -1,12 +1,8 @@
 package com.imooc.miaosha.domain;
-/**
-* @author 全恒
-*/
-public class User {
 
+public class User {
 	private int id;
 	private String name;
-	
 	public int getId() {
 		return id;
 	}
@@ -19,5 +15,4 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 }
