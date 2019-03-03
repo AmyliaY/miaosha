@@ -11,9 +11,9 @@
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.5.8.RELEASE</version>
-</parent>
+  </parent>
 
-  <name>miaosha_2</name>
+  <name>miaosha_01</name>
   <url>http://maven.apache.org</url>
 
   <properties>

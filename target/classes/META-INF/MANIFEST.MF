@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Implementation-Title: miaosha_2
+Implementation-Title: miaosha_01
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: HP
 Implementation-Vendor-Id: com.imooc
