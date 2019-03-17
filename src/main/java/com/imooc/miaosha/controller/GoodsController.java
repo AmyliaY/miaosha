@@ -54,17 +54,17 @@ public class GoodsController {
     public String list(HttpServletRequest request, HttpServletResponse response, Model model,MiaoshaUser user) {
     	model.addAttribute("user", user);
     	//取缓存
-    	String html = redisService.get(GoodsKey.getGoodsList, "", String.class);
-    	if(!StringUtils.isEmpty(html)) {
-    		return html;
-    	}
+//    	String html = redisService.get(GoodsKey.getGoodsList, "", String.class);
+//    	if(!StringUtils.isEmpty(html)) {
+//    		return html;
+//    	}
     	List<GoodsVo> goodsList = goodsService.listGoodsVo();
     	model.addAttribute("goodsList", goodsList);
 //    	 return "goods_list";
     	SpringWebContext ctx = new SpringWebContext(request,response,
     			request.getServletContext(),request.getLocale(), model.asMap(), applicationContext );
     	//手动渲染
-    	html = thymeleafViewResolver.getTemplateEngine().process("goods_list", ctx);
+    	String html = thymeleafViewResolver.getTemplateEngine().process("goods_list", ctx);
     	if(!StringUtils.isEmpty(html)) {
     		redisService.set(GoodsKey.getGoodsList, "", html);
     	}

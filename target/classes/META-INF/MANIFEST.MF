@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
-Implementation-Title: miaosha_01
+Implementation-Title: miaosha_2
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: HP
-Implementation-Vendor-Id: com.imooc
+Implementation-Vendor-Id: com.shuitu
 Build-Jdk: 1.8.0_66
 Implementation-URL: http://maven.apache.org
 Created-By: Maven Integration for Eclipse
