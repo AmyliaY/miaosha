@@ -104,7 +104,6 @@ public class GoodsController {
     	}
     	model.addAttribute("miaoshaStatus", miaoshaStatus);
     	model.addAttribute("remainSeconds", remainSeconds);
-//        return "goods_detail";
     	
     	SpringWebContext ctx = new SpringWebContext(request,response,
     			request.getServletContext(),request.getLocale(), model.asMap(), applicationContext );
